@@ -12,7 +12,7 @@ _This page demonstrates understanding of Sass mix-ins, media queries, and extend
 
 * _Clone repository._
 * _Double click "index.html"_
-* _Or view the [Quiz Cards](https://doohinkus.github.io/quiz-cards/) now._
+* _Or view the [Quiz Cards](https://doohinkus.github.io/quiz-cards/index.html) now._
 
 
 _If "index.html" fails to open when double clicked, then drag the file into your favorite browser._
