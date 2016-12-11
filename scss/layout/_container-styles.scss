@@ -1,0 +1,39 @@
+.header{
+  // background-color: $base-blue;
+  background-image: url(../img/cloud-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.container{
+  .card-wrapper{
+    .card-homer, .card-willie, .card-marge, .card-bart{
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 7px;
+      border: 3px solid $white;
+      box-shadow: 3px 3px $dark-grey;
+
+      .icon{
+        width: 50px;
+        margin-left:50%;
+        margin-top: -40px;
+        transform: translate(-25px);
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        align-content: center;
+        vertical-align: middle;
+        text-align: center;
+        box-shadow: 4px 4px $accent-red;
+      }
+      .card-image{
+        text-align: center;
+      }
+    }
+    @include  transparentBg (".card-willie", "../img/willie.png", $base-blue);
+    @include  transparentBg (".card-homer", "../img/homer-simpson.png", $accent-red);
+    @include  transparentBg (".card-bart", "../img/bart-simpson.png", $base-blue);
+    @include  transparentBg (".card-marge", "../img/marge-simpson.png", $accent-red);
+
+  }
+}

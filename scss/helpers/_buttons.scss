@@ -1,0 +1,19 @@
+.wave-button-open{
+  box-shadow: 2px 0 $base-yellow-dark;
+  @include border-top-radius($padding);
+  @extend %wave;
+}
+.wave-button-close{
+  display: inline-block;
+  margin-top: $padding;
+  @extend %wave;
+}
+.facebook, .twitter, .pinterest{
+
+  transition: .7s;
+  &:hover{
+    color: $base-yellow;
+    animation: bobble .5s infinite;
+    cursor: pointer;
+  }
+}

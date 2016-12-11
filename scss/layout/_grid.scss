@@ -1,0 +1,55 @@
+//columns need rows!!!!!!
+//height 100% for columns to match
+//wrap
+  //col
+  //col
+//wrap
+  //col
+  //col
+.header{
+    @include pad($padding);
+    text-align: center;
+  }
+.container{
+  .card-wrapper{
+    @include outer-container(90%);
+    .card-homer, .card-willie, .card-marge, .card-bart{
+      @include span-columns(12);
+      @include margin($padding 0);
+      @include pad($padding);
+      .card-image{
+        float: left;
+        img{
+          max-height: 170px;
+        }
+      }
+      .card-text{
+        clear: both;
+      }
+    }
+    @include media (800px){
+      .card-homer, .card-willie, .card-marge, .card-bart{
+        @include margin($padding 0);
+        @include span-columns(6);
+        @include pad($padding);
+        .card-image{
+          float: none;
+          img{
+            max-height:100%;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    @include outer-container(100%);
+    @include omega();
+    .footer-wrap{
+      @include outer-container(80%);
+      .twitter, .facebook, .pinterest{
+        @include span-columns(4);
+        @include pad($padding);
+      }
+    }
+  }
+}

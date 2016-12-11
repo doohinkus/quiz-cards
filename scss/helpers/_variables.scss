@@ -1,0 +1,55 @@
+//fonts
+$base-font: 'Pacifico', cursive;
+
+// 'Rokkitt', serif;
+// font-family: 'Pacifico', cursive;
+
+$accent-font: 'Luckiest Guy', sans-serif;
+
+//colors
+$lighten-amount      : 20%;
+
+$white               : #fff;
+$dark-grey           : #2D290C;
+
+$base-blue           : #0071CF;
+$base-blue-light     : lighten($base-blue, $lighten-amount);
+
+$base-yellow         : #EFE200;
+$base-yellow-light   : lighten($base-yellow, $lighten-amount);
+$base-yellow-dark   : darken($base-yellow, $lighten-amount);
+
+$accent-red          : #C82D0F;
+$accent-red-light    : lighten($accent-red, $lighten-amount);
+
+$splash-green        : #AFB712;
+$splash-green-light  :  lighten($splash-green, $lighten-amount);
+
+//padding and margins
+$padding: 15px;
+
+//donut used in typography for h1
+%donut{
+  content:"";
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height:30px;
+  background: url(../img/donut-icon.png);
+  background-size: cover;
+}
+//used in buttons
+%wave{
+  text-decoration: none;
+  font-family: $accent-font;
+  color: $white;
+  background-color: $base-yellow;
+  padding: $padding;
+  transition:.5s;
+  &:hover{
+    color: $base-blue;
+    -webkit-text-fill-color: $base-blue;
+    -webkit-text-stroke-color: $white;
+
+  }
+}

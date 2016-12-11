@@ -1,0 +1,29 @@
+body{
+  color: $white;
+  background-color: $base-yellow;
+  .header{
+    // background-color: $base-blue;
+  }
+  .container{
+    .card-wrapper{
+      .icon{
+        background-color: $accent-red-light;
+      }
+      .card-homer, .card-marge{
+        .card-title{
+          padding: 7px;
+          border-radius: 7px;
+        }
+      }
+      .card-willie, .card-bart{
+        .card-title{
+          padding: 7px;
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+  .footer{
+    background-color: $accent-red;
+  }
+}

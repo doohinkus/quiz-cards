@@ -1,0 +1,55 @@
+//custom mix-in for transparent bg
+@mixin transparentBg ($selector, $bg, $color){
+  #{$selector}{
+  display: block;
+  position: relative;
+  transition: 0.5s;
+    &:after{
+      content:"";
+      transition: 0.5s;
+      background: linear-gradient(rgba($color, 0.9),rgba($color, 0.9)), url($bg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      // box-shadow: 8px 8px darken($color, 20%);
+      position: absolute;
+      z-index: -1;
+    }
+    & > .card-title h2, & > .icon{
+      transition: 0.5s;
+
+    }
+    &:hover > .card-title h2{
+      color: $white;
+      font-size: 2.2rem;
+
+    }
+    &:hover > .icon{
+      background-color: $base-yellow-light;
+    }
+    &:hover > .card-body .card-image img{
+      animation: bobble .5s infinite;
+    }
+  }
+}
+@mixin makeTransparentBackgroundsAndSectionColors($element, $img, $color){
+  @include transparentBg ($element, $img, $color);
+  #{$element}{
+    header {
+      div{
+        position: relative;
+        span.diamond{
+          @extend %diamondSPAN;
+          background-color: $color;
+        }
+        span.letter{
+          @extend %letterSPAN;
+        }
+      }
+    }
+  }
+}

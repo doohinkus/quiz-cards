@@ -1,0 +1,63 @@
+body{
+  font-family: $base-font;
+}
+h1, h2, h3{
+  font-family: $accent-font;
+  letter-spacing: 3px;
+}
+h1{
+  @include pad($padding);
+  text-align: center;
+  &:before{
+    @extend %donut;
+    margin-right:$padding;
+  }
+  &:after{
+    @extend %donut;
+    margin-left:$padding;
+  }
+}
+.container{
+  >h2{
+    color:$base-blue;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: none;
+    -webkit-text-fill-color: $base-blue;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $white;
+  }
+}
+h1, h2{
+  -webkit-text-fill-color: $white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $base-blue;
+  text-shadow: 1px 1px $dark-grey;
+}
+.wave-button-open, .wave-button-close{
+  font-size: 1.5rem;
+  -webkit-text-fill-color: $white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $base-blue;
+}
+.card-body{
+  text-align: left;
+}
+.card-footer{
+  @include outer-container();
+  color: $white;
+  text-shadow: 1px 1px $dark-grey;
+  i{
+    display:block;
+  }
+  div{
+    // display: block;
+    @include span-columns(6);
+  }
+}
+.video{
+  text-align: center;
+}
+.footer{
+  text-align: center;
+}
