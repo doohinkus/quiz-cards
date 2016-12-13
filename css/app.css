@@ -44,7 +44,8 @@ body {
     background-color: #C82D0F; }
 
 body {
-  font-family: "Pacifico", cursive; }
+  font-family: "Rokkitt", sans-serif;
+  font-size: 14pt; }
 
 h1, h2, h3 {
   font-family: "Luckiest Guy", sans-serif;
@@ -188,6 +189,8 @@ h1, h2 {
         max-width: 50%; }
     .container .card-wrapper .card-homer .card-text, .container .card-wrapper .card-willie .card-text, .container .card-wrapper .card-marge .card-text, .container .card-wrapper .card-bart .card-text {
       float: right; }
+    .container .card-wrapper .card-homer .card-footer, .container .card-wrapper .card-willie .card-footer, .container .card-wrapper .card-marge .card-footer, .container .card-wrapper .card-bart .card-footer {
+      clear: both; }
   @media screen and (min-width: 850px) {
     .container .card-wrapper .card-homer, .container .card-wrapper .card-willie, .container .card-wrapper .card-marge, .container .card-wrapper .card-bart {
       margin: 15px 0;

@@ -25,6 +25,10 @@
       }
       .card-text{
         float: right;
+
+      }
+      .card-footer{
+        clear: both;
       }
     }
     @include media ($tablet){
