@@ -20,14 +20,14 @@
       .card-image{
         float: left;
         img{
-          max-height: 170px;
+          max-width: 50%;
         }
       }
       .card-text{
-        clear: both;
+        float: right;
       }
     }
-    @include media (800px){
+    @include media ($tablet){
       .card-homer, .card-willie, .card-marge, .card-bart{
         @include margin($padding 0);
         @include span-columns(6);
@@ -37,6 +37,23 @@
           img{
             max-height:100%;
           }
+        }
+      }
+    }
+    @include media ($large){
+      .card-homer, .card-willie, .card-marge, .card-bart{
+        @include margin($padding 0);
+        @include span-columns(12);
+        @include pad($padding);
+        @include outer-container(12);
+        .card-image{
+            @include span-columns(6);
+          img{
+            max-height:70%;
+          }
+        }
+        .card-text{
+            @include span-columns(6);
         }
       }
     }

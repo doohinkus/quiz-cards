@@ -142,7 +142,7 @@ h1, h2 {
   display: none; }
 
 .card-body .card-image img {
-  height: 400px; }
+  max-width: 50%; }
 
 @keyframes bobble {
   0% {
@@ -185,10 +185,10 @@ h1, h2 {
     .container .card-wrapper .card-homer .card-image, .container .card-wrapper .card-willie .card-image, .container .card-wrapper .card-marge .card-image, .container .card-wrapper .card-bart .card-image {
       float: left; }
       .container .card-wrapper .card-homer .card-image img, .container .card-wrapper .card-willie .card-image img, .container .card-wrapper .card-marge .card-image img, .container .card-wrapper .card-bart .card-image img {
-        max-height: 170px; }
+        max-width: 50%; }
     .container .card-wrapper .card-homer .card-text, .container .card-wrapper .card-willie .card-text, .container .card-wrapper .card-marge .card-text, .container .card-wrapper .card-bart .card-text {
-      clear: both; }
-  @media screen and (min-width: 800px) {
+      float: right; }
+  @media screen and (min-width: 850px) {
     .container .card-wrapper .card-homer, .container .card-wrapper .card-willie, .container .card-wrapper .card-marge, .container .card-wrapper .card-bart {
       margin: 15px 0;
       float: left;
@@ -202,6 +202,39 @@ h1, h2 {
         float: none; }
         .container .card-wrapper .card-homer .card-image img, .container .card-wrapper .card-willie .card-image img, .container .card-wrapper .card-marge .card-image img, .container .card-wrapper .card-bart .card-image img {
           max-height: 100%; } }
+  @media screen and (min-width: 950px) {
+    .container .card-wrapper .card-homer, .container .card-wrapper .card-willie, .container .card-wrapper .card-marge, .container .card-wrapper .card-bart {
+      margin: 15px 0;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 15px;
+      max-width: 12;
+      margin-left: auto;
+      margin-right: auto; }
+      .container .card-wrapper .card-homer:last-child, .container .card-wrapper .card-willie:last-child, .container .card-wrapper .card-marge:last-child, .container .card-wrapper .card-bart:last-child {
+        margin-right: 0; }
+      .container .card-wrapper .card-homer::after, .container .card-wrapper .card-willie::after, .container .card-wrapper .card-marge::after, .container .card-wrapper .card-bart::after {
+        clear: both;
+        content: "";
+        display: block; }
+      .container .card-wrapper .card-homer .card-image, .container .card-wrapper .card-willie .card-image, .container .card-wrapper .card-marge .card-image, .container .card-wrapper .card-bart .card-image {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .container .card-wrapper .card-homer .card-image:last-child, .container .card-wrapper .card-willie .card-image:last-child, .container .card-wrapper .card-marge .card-image:last-child, .container .card-wrapper .card-bart .card-image:last-child {
+          margin-right: 0; }
+        .container .card-wrapper .card-homer .card-image img, .container .card-wrapper .card-willie .card-image img, .container .card-wrapper .card-marge .card-image img, .container .card-wrapper .card-bart .card-image img {
+          max-height: 70%; }
+      .container .card-wrapper .card-homer .card-text, .container .card-wrapper .card-willie .card-text, .container .card-wrapper .card-marge .card-text, .container .card-wrapper .card-bart .card-text {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .container .card-wrapper .card-homer .card-text:last-child, .container .card-wrapper .card-willie .card-text:last-child, .container .card-wrapper .card-marge .card-text:last-child, .container .card-wrapper .card-bart .card-text:last-child {
+          margin-right: 0; } }
 .container .footer {
   max-width: 100%;
   margin-left: auto;
